@@ -40,6 +40,23 @@ router.put('/:id',(req, res, next)=>{
     res.status(200).json({ "Original": Original, "Modificado" : Modified});
 });
 
+router.delete('/:id',(req, res, next)=>{
+    var id = req.params.id;
+    var Delete = {};
+    recipeCollection = recipeCollection.filter((e,i)=>{
+        if(e.id == id){
+
+            Delete = Object.assign({},e);
+            return false;
+
+
+        }
+        return true;
+    });
+
+    res.status(200).json({"Borrado":Delete, "Colección":recipeCollection});
+});
+
 
 module.exports = router;
 
