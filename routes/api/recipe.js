@@ -25,6 +25,21 @@ router.post('/',(req, res, next)=>{
     res.status(200).json(newElement);
 
 }); 
+router.put('/:id',(req, res, next)=>{
+    var id = req.params.id;
+    var Modified = {};
+    var Original = {};
+
+    recipeCollection = recipeCollection.map((e,i)=>{
+        if(e.id == id){
+            Original = Object.assign({}, e);
+            return Modified = Object.assign({}, e, req.body);
+        }
+        return e;
+    });
+    res.status(200).json({ "Original": Original, "Modificado" : Modified});
+});
+
 
 module.exports = router;
 
