@@ -1,0 +1,366 @@
+{
+	"info": {
+		"_postman_id": "c229562b-c119-431e-a447-ca6133f6b107",
+		"name": "EX11501199700976",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/api/recipe",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "1501199700976",
+							"type": "text"
+						},
+						{
+							"key": "clase",
+							"value": "Español",
+							"type": "text"
+						},
+						{
+							"key": "seccion",
+							"value": "1040",
+							"type": "text"
+						},
+						{
+							"key": "cupos",
+							"value": "20",
+							"type": "text"
+						},
+						{
+							"key": "docente",
+							"value": "Rafita",
+							"type": "text"
+						},
+						{
+							"key": "campus",
+							"value": "Tegus",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/recipe",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"recipe"
+					]
+				},
+				"description": "Get"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/recipe",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "1501199700976",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "receta",
+							"value": "Acetaminofen",
+							"type": "text"
+						},
+						{
+							"key": "precio",
+							"value": "1500.00",
+							"type": "text"
+						},
+						{
+							"key": "tipo",
+							"value": "Inyección",
+							"type": "text"
+						},
+						{
+							"key": "observacion",
+							"value": "Diaria",
+							"type": "text"
+						},
+						{
+							"key": "estado",
+							"value": "Inactivo",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/recipe",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"recipe"
+					]
+				},
+				"description": "Post"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/recipe",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "1501199700976",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "receta",
+							"value": "Acetaminofen",
+							"type": "text"
+						},
+						{
+							"key": "precio",
+							"value": "1500.00",
+							"type": "text"
+						},
+						{
+							"key": "tipo",
+							"value": "Inyección",
+							"type": "text"
+						},
+						{
+							"key": "observacion",
+							"value": "Diaria",
+							"type": "text"
+						},
+						{
+							"key": "estado",
+							"value": "Inactivo",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/recipe",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"recipe"
+					]
+				},
+				"description": "Get luego de haber hecho el primero Post"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/recipe/0ad719e3-ed99-4433-b869-fd685234aea3",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "receta",
+							"value": "Acetaminofen",
+							"type": "text"
+						},
+						{
+							"key": "precio",
+							"value": "150.00",
+							"type": "text"
+						},
+						{
+							"key": "tipo",
+							"value": "Inyección",
+							"type": "text"
+						},
+						{
+							"key": "observacion",
+							"value": "Cada 3 Días",
+							"type": "text"
+						},
+						{
+							"key": "estado",
+							"value": "Inactivo",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/recipe/0ad719e3-ed99-4433-b869-fd685234aea3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"recipe",
+						"0ad719e3-ed99-4433-b869-fd685234aea3"
+					]
+				},
+				"description": "Put"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/recipe/f2ca4372-255a-4ed2-afb2-53b6e0b8f300",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/api/recipe/f2ca4372-255a-4ed2-afb2-53b6e0b8f300",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"recipe",
+						"f2ca4372-255a-4ed2-afb2-53b6e0b8f300"
+					]
+				},
+				"description": "Borrar"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/recipe",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "1501199700976",
+							"type": "text"
+						},
+						{
+							"key": "clase",
+							"value": "Español",
+							"type": "text"
+						},
+						{
+							"key": "seccion",
+							"value": "1040",
+							"type": "text"
+						},
+						{
+							"key": "cupos",
+							"value": "20",
+							"type": "text"
+						},
+						{
+							"key": "docente",
+							"value": "Rafita",
+							"type": "text"
+						},
+						{
+							"key": "campus",
+							"value": "Tegus",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/recipe",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"recipe"
+					]
+				},
+				"description": "Get despues del Borrar"
+			},
+			"response": []
+		}
+	]
+}
